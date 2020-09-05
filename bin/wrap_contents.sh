@@ -4,7 +4,7 @@ file=$1
 
 header="$2_header.html"
 
-footer=$3
+footer="$2_footer.html"
 
 output=$3
 
