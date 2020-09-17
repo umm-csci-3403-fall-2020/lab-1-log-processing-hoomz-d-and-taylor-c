@@ -8,7 +8,7 @@ for i in "$@"
 do
 	name=$(basename "$i" .tgz)
 	mkdir -p "$scratch"/"$name"
-	tar -xzf $i -C "$scratch"/"$name"
+	tar -xzf "$i" -C "$scratch"/"$name"
 	./bin/process_client_logs.sh "$scratch"/"$name";
 done
 
